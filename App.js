@@ -1,12 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {View} from 'react-native';
+import Index from "./src/screen/Index.js";
 
 // rnfes
 
 export default App = () => {
   return (
-    <View>
-      <Text>HI</Text>
-    </View>
+    <Index />
   ); 
 };
