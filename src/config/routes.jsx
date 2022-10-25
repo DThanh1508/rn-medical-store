@@ -5,14 +5,17 @@ import Detail from "../pages/Detail";
 
 const routes = [
   {
+    name: "Home",
     path:"/",
     component: Home,
     children: [
       {
+        name: "Product",
         path: "/product",
         component: Product,
         children: [
           {
+            name: "Detail",
             path: "/detail",
             component: Detail,
           }
@@ -21,6 +24,7 @@ const routes = [
     ],
   },
   {
+    name: "Profile",
     path: "/profile",
     component: SettingProfile,
   },
