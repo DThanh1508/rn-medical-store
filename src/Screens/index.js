@@ -6,7 +6,7 @@ import routes from "../config/routes";
 
 const tab = createBottomTabNavigator();
 
-const Index = () => {
+const Screens = () => {
   return (
       <NavigationContainer>
         <tab.Navigator>
@@ -20,4 +20,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default Screens;
