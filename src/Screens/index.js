@@ -12,7 +12,16 @@ const Screens = () => {
         <tab.Navigator>
           {
             routes.map((route, index)=>{
-              return <tab.Screen name={route.name} component={route.component} key={index} />
+              return <tab.Screen name={route.name} component={route.component} key={index}
+              options={()=> {
+              return{
+                  tabBarShowLabel: false,
+                  tabBarIcon: () => {
+                      return (route.icon)
+                  }
+              }
+              }
+              } />
             })
           }
         </tab.Navigator>
